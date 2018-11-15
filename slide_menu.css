@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, serif;
+    background-color: whitesmoke; 
+}
+.nav-bar {
+    background-color: goldenrod;
+    overflow: hidden;
+    height: 60px;
+    margin: 14px;
+    padding: 14px;
+    border-radius: 10px;
+}
+.nav-bar a {
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    border-radius: 10px;
+}
+.nav-bar a:hover {
+    background-color: gold;
+    color: white;
+    border-radius: 10px;
+}
+.side-nav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+.side-nav a {
+    display: block;
+    padding-right: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    color: rgba(218, 165, 32, 0.9);
+    transition: 0.3s;
+}
+.side-nav a:hover {
+    background-color: rgba(245, 245, 245, 0.9);
+    border-right: 12px solid whitesmoke;
+    border-left: 12px solid whitesmoke;
+}
+.side-nav .btn-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 40px;
+}
+.side-nav .btn-close:hover {
+    border: none;
+}
+#main {
+    transition: 0.5s;
+    width: 100%;
+    padding: 15px;
+    overflow: hidden;
+}
+@media(max-width: 568px){
+    .nav-bar-links{display:none}
+}
